@@ -1,0 +1,23 @@
+/* ================================================
+ Common CSS 
+================================================ */
+:root {
+    --skyblue: #219cf0;
+  }
+  body {
+    font-family: "Raleway", serif;
+    font-size: 15px;
+    color: #323232;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  
