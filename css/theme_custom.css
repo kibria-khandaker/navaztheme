@@ -5,6 +5,7 @@
     --skyblue: #219cf0;
   }
   body {
+    background-color: var(--skyblue);
     font-family: "Raleway", serif;
     font-size: 15px;
     color: #323232;

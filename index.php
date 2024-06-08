@@ -10,10 +10,8 @@ get_header();
 <section id="body_area">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                
-    <h1>Index page </h1>
-                
+            <div class="col-md-12">                
+                <h1>Index page </h1>
             </div>
 
         </div>

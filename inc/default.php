@@ -7,8 +7,8 @@ add_theme_support( 'title-tag' );
 add_theme_support('post-thumbnails', array('page','post'));
 add_image_size( 'post-thumbnails', 970,350,true );
 
-function my_theme_setup(){
+function navaz_theme_setup(){
     add_theme_support( 'post-thumbnails');
     add_theme_support( 'post-formats', array( 'aside', 'gallery','link','image','quote','status','video','audio','chat' ) );
 }
-add_action( 'after_setup_theme','my_theme_setup' );
+add_action( 'after_setup_theme','navaz_theme_setup' );

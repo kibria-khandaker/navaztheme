@@ -19,9 +19,8 @@ function navaz_css_js_file_call() {
 }
 add_action( 'wp_enqueue_scripts', 'navaz_css_js_file_call' );
 
-
 // Google call
-function netkib_google_fonts() {
-    wp_enqueue_style( 'netkib_google_fonts', 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap', false );
+function navaz_google_fonts() {
+    wp_enqueue_style( 'navaz_google_fonts', 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap', false );
 }
-add_action( 'wp_enqueue_scripts', 'netkib_google_fonts' );
+add_action( 'wp_enqueue_scripts', 'navaz_google_fonts' );
