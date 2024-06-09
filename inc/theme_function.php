@@ -54,9 +54,7 @@ function navaz_customize_register( $wp_customize ) {
         'section'     => 'navaz_footer_section',
     ) );
 
-
-/*
-    // Theme Color Change
+    // Theme Color Change from customization
     $wp_customize->add_section( 'navaz_theme_color_section', array(
         'title'       => __( 'Theme Color Change Option', 'navaztheme' ),
         'description' => __( 'Here is the description about Theme Color Change', 'navaztheme' ),
@@ -82,6 +80,7 @@ function navaz_customize_register( $wp_customize ) {
         'setting'     => 'navaz_theme_link_color_setting',
     ) ) );
 
+    /*
     // WP Default Login Page logo Change
     $wp_customize->add_section( 'navaz_wp_login_section', array(
         'title'       => __( 'WP Login Logo Change', 'navaztheme' ),
@@ -141,3 +140,51 @@ function navaz_customize_register( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'navaz_customize_register' );
+
+
+
+// Theme Color Change from customization || 
+function navaz_theme_color_cus() {
+    ?>
+        <style>
+            body{background: <?php print get_theme_mod( 'navaz_theme_bg_color_setting' );?>}
+            :root{--pink: <?php print get_theme_mod( 'navaz_theme_link_color_setting' );?>}
+
+            /* body{background: <?php // echo esc_attr( $navaz_theme_bg_color_setting ); ?>}
+            :root{--pink: <?php // echo esc_attr( $navaz_theme_link_color_setting ); ?>} */
+        </style>
+     <?php
+}
+add_action( 'wp_head', 'navaz_theme_color_cus' );
+
+function navaz_theme_wp_login() {
+    ?>
+       <style>
+            #login h1 a, .login h1 a{
+            background-image: url(<?php print get_theme_mod( 'navaz_wp_login_logo_setting' );?>) !important;
+            }
+            /* Login page bg change css  */
+            body.login {
+                background: url(<?php print get_theme_mod( 'navaz_wp_login_bg_logo_setting' );?>) !important;
+                /* background: url(../img/wp_login_bd.jpg); */
+            }
+            /* color change  */
+            #login form p.submit input {
+                background: <?php print get_theme_mod( 'navaz_wp_login_field_color_setting' );?> !important;
+            }
+            .login #login_error,
+            .login .message,
+            .login .success {
+                border-left: 4px solid <?php print get_theme_mod( 'navaz_wp_login_field_color_setting' );?> !important;
+            }
+            input#user_login,
+            input#user_pass {
+                border-left: 4px solid <?php print get_theme_mod( 'navaz_wp_login_field_color_setting' );?> !important;
+            }
+
+
+       </style>
+    <?php
+}
+add_action( 'login_enqueue_scripts', 'navaz_theme_wp_login' );
+

@@ -7,7 +7,7 @@ get_header();?>
 
 
 <!-- bxSlider start -->
-<?php // get_template_part( 'template_part/bxSlider' ); ?> 
+<?php get_template_part( 'template_part/bxSlider' ); ?> 
 <!-- bxSlider end -->
 <!-- owl-carousel  start -->
 <?php // get_template_part( 'template_part/owl-carousel' ); ?> 
@@ -27,7 +27,9 @@ get_header();?>
 <section id="service_area">
     <div class="container">
         <div class="row">
-
+        <div class="col-md-12 text-center my-5">
+            <h2> Here top Services </h2>
+        </div>
         <?php
             query_posts( 'post_type=service&post_status=publish&posts_per_page=3&order=ASC&paged=' . get_query_var( 'post' ) );
             if ( have_posts() ):
@@ -37,14 +39,13 @@ get_header();?>
             <div class="child_service">
                 <h2> <?php the_title(); ?> </h2>
                 <?php echo the_post_thumbnail('service'); ?>
-                <?php the_excerpt(); ?>
-                
+                <?php the_excerpt(); ?>                
             </div>
         </div>
         <?php
                 endwhile;
             else:
-                _e( 'No Service found','rowthemedevelopment' );
+                _e( 'No Service found','navaztheme' );
             endif;
         ?>
 
@@ -74,7 +75,7 @@ get_header();?>
         <?php
                 endwhile;
             else:
-                _e( 'No project found','rowthemedevelopment' );
+                _e( 'No project found','navaztheme' );
             endif;
         ?>
 

@@ -26,9 +26,9 @@
         _e( 'No Post found','navaztheme' );
     endif;
 ?>
-<!-- <div id="page_nav">
+<div id="page_nav">
     <?php if ( 'navaz_pagenav' ) {navaz_pagenav();} else {?>
         <?php next_posts_link();?>
         <?php previous_posts_link();?>
     <?php }?>
-</div> -->
+</div>

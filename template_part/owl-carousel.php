@@ -14,7 +14,7 @@
             <?php
                     endwhile;
                 else:
-                    _e( 'No Service found','rowthemedevelopment' );
+                    _e( 'No Service found','navaztheme' );
                 endif;
             ?>
             </div>

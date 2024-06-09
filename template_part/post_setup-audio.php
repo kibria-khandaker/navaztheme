@@ -18,6 +18,6 @@ if ( have_posts() ):
             </div>
             <?php endwhile;
 else:
-    _e( 'No Post found','rowthemedevelopment' );
+    _e( 'No Post found','navaztheme' );
 endif;?>
 

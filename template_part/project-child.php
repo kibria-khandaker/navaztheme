@@ -27,7 +27,7 @@
             <?php
         endwhile;
     else:
-        _e( 'No Post found','rowthemedevelopment' );
+        _e( 'No Post found','navaztheme' );
     endif;
 ?>
 <div id="page_nav">
