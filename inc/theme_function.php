@@ -9,7 +9,7 @@ function navaz_customize_register( $wp_customize ) {
         'description' => __( 'Here is the description about Header Area', 'navaztheme' ),
     ) );
     $wp_customize->add_setting( 'navaz_header_logo', array(
-        'default' => get_bloginfo( 'template_directory' ) . '/img/logo.png',
+        'default' => get_bloginfo( 'template_directory' ) . '/img/header_logo.png',
     ) );
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'navaz_header_logo', array(
         'label'       => 'Header Logo Upload',
@@ -39,14 +39,13 @@ function navaz_customize_register( $wp_customize ) {
         ),
     ) );
 
-/*
     // Footer Option
     $wp_customize->add_section( 'navaz_footer_section', array(
         'title'       => __( 'Footer Option', 'navaztheme' ),
         'description' => __( 'Here is the description about Footer Area', 'navaztheme' ),
     ) );
     $wp_customize->add_setting( 'navaz_copyright_setting', array(
-        'default' => '&copy; Copyright 2024 | navaz',
+        'default' => '&copy; Copyright 2024 | navaz theme',
     ) );
     $wp_customize->add_control( 'navaz_copyright_setting', array(
         'label'       => 'Copyright Text',
@@ -55,6 +54,8 @@ function navaz_customize_register( $wp_customize ) {
         'section'     => 'navaz_footer_section',
     ) );
 
+
+/*
     // Theme Color Change
     $wp_customize->add_section( 'navaz_theme_color_section', array(
         'title'       => __( 'Theme Color Change Option', 'navaztheme' ),

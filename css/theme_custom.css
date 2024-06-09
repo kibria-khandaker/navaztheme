@@ -581,8 +581,8 @@ widget_footer_title */
 footer copyright area
 ================================================ */
 #copyright_area {
-  background-color: #5f5f5f;
-  padding: 20px 0;
+  background-color:var(--pink);
+  padding: 10px 0;
   color: #ffffff;
 }
 #copyright_area p {
