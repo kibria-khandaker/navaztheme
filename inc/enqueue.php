@@ -15,7 +15,6 @@ function navaz_css_js_file_call() {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), 'v5.3.3', true );
     wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
-
 }
 add_action( 'wp_enqueue_scripts', 'navaz_css_js_file_call' );
 

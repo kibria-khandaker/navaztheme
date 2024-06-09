@@ -13,4 +13,19 @@
 </head>
 <body <?php body_class();?> >
 
- <h1>Header</h1>
+<header id="header_area" class="<?php print get_theme_mod( 'navaz_header_menu_position_setting' ); ?>">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 logo_img">
+                <!-- <a href="#"> <img src="<?php // echo get_template_directory_uri(); ?>/img/logo.png" alt="logo" > </a> -->
+                <!-- <a href="<?php // echo home_url(); ?>"> <img src="<?php // echo esc_attr( $navaz_header_logo ); ?>" alt="logo" > </a> -->
+                <a href="<?php print home_url(); ?>"><img src="<?php print get_theme_mod( 'navaz_header_logo' ); ?>" alt="logo" > </a>
+            </div>
+            <div class="col-md-9">
+            <?php wp_nav_menu( array( 'theme_location' => 'main_menu', 'menu_id' => 'nav' ) );?>
+
+            </div>
+        </div>
+    </div>
+</header>
