@@ -3,7 +3,7 @@
   // bloginfo( 'name' ); 
   // bloginfo( 'description' );
 
-  // rowthemedevelopment
+  // navaztheme
 // echo "<p> Ad Your <b>Header Area</b> information here. </p>";
 
 ?>
@@ -28,7 +28,7 @@
 
         <input type="hidden" name="action" value="update">
         <input type="hidden" name="page_options" value="address-info, email-info, phone-number">
-        <input type="submit" name="submit" value="<?php _e('Save Info', 'rowthemedevelopment') ?>">
+        <input type="submit" name="submit" value="<?php _e('Save Info', 'navaztheme') ?>">
 
       </form>
     </div>

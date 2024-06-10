@@ -12,9 +12,9 @@
                 <div class="post_details">
                     <h2><a href="<?php the_permalink();?>"> <?php the_title();?></a></h2>
                     <p class="post_date"> 
-                        <i class="fa-solid fa-calendar-days"></i>  <?php echo the_time('D, d F Y'); ?>
-                        <span>At</span> 
-                        <i class="fa-solid fa-clock"></i> <?php echo the_time('G : i'); ?>
+                        <i class="fa-solid fa-calendar-days"></i>  <?php echo the_time('d F Y'); ?>
+                        <span>at</span> 
+                        <i class="fa-solid fa-clock"></i> <?php echo the_time('D : G : i'); ?>
                         
                     </p>
                     <?php the_excerpt();?>

@@ -1,3 +1,4 @@
+<!-- need to make a shortcode this slider  -->
 <section id="slider_area">
     <div class="container">
         <div class="row">

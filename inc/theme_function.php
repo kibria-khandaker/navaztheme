@@ -9,7 +9,8 @@ function navaz_customize_register( $wp_customize ) {
         'description' => __( 'Here is the description about Header Area', 'navaztheme' ),
     ) );
     $wp_customize->add_setting( 'navaz_header_logo', array(
-        'default' => get_bloginfo( 'template_directory' ) . '/img/header_logo.png',
+        // 'default' => get_bloginfo( 'template_directory' ) . '/img/header_logo.png',
+        'default' => get_template_directory_uri() . '/img/header_logo.png',
     ) );
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'navaz_header_logo', array(
         'label'       => 'Header Logo Upload',

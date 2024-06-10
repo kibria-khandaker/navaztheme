@@ -101,7 +101,7 @@ function navaz_query_post_type($query){
         if ($post_type) {
             $post_type =$post_type;
         }else{
-            $post_type = array('post','service');
+            $post_type = array('post','service','project');
             $query -> set('post_type',$post_type);
             return $query;
         }

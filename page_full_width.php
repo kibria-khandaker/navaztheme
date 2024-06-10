@@ -1,0 +1,21 @@
+<span class="text-center d-block">page_full_width.php</span>
+<?php 
+/**
+ * Template Name: Full Width Page
+ */
+get_header();
+?>
+
+<section id="body_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+             <?php get_template_part( 'template_part/post_setup' ); ?>  
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<?php get_footer(); ?>
+
