@@ -81,49 +81,53 @@ function navaz_customize_register( $wp_customize ) {
         'setting'     => 'navaz_theme_link_color_setting',
     ) ) );
 
-    /*
-    // WP Default Login Page logo Change
-    $wp_customize->add_section( 'navaz_wp_login_section', array(
-        'title'       => __( 'WP Login Logo Change', 'navaztheme' ),
+
+    // WP Default Login Page logo Change ------------
+    $wp_customize->add_section( 'navaz_wp_login_page_section', array(
+        'title'       => __( 'WP Login page setup', 'navaztheme' ),
         'description' => __( 'Here is the description about Theme WP Login Logo Change', 'navaztheme' ),
     ) );
+
     $wp_customize->add_setting( 'navaz_wp_login_logo_setting', array(
-        'default' => get_template_directory_uri() . '/img/wp-login-logo.png',
+        'default' => get_template_directory_uri() . '/img/header_logo.png',
     ) );
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'navaz_wp_login_logo_setting', array(
         'label'       => 'WP Login Logo Upload',
         'description' => __( 'Here is the description about WP Login logo', 'navaztheme' ),
         'setting'     => 'navaz_wp_login_logo_setting',
-        'section'     => 'navaz_wp_login_section',
+        'section'     => 'navaz_wp_login_page_section',
     ) ) );
-
-
-    // WP Default Login Page BG img Change -----
-
-    // $wp_customize->add_section( 'navaz_wp_login_bg_section', array(
-    //     'title'       => __( 'WP Login Page BG Change', 'navaztheme' ),
-    //     'description' => __( 'Here is the description about Theme WP Login Page BG Change', 'navaztheme' ),
-    // ) );
-    $wp_customize->add_setting( 'navaz_wp_login_bg_logo_setting', array(
+    $wp_customize->add_setting( 'navaz_wp_login_page_bg_setting', array(
         'default' => get_template_directory_uri() . '/img/wp_login_bd.jpg',
     ) );
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'navaz_wp_login_bg_logo_setting', array(
-        'label'       => 'WP Login Logo Upload',
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'navaz_wp_login_page_bg_setting', array(
+        'label'       => 'WP Login page BG change',
         'description' => __( 'Here is the description about WP Login Page BG', 'navaztheme' ),
-        'setting'     => 'navaz_wp_login_bg_logo_setting',
-        'section'     => 'navaz_wp_login_section',
+        'setting'     => 'navaz_wp_login_page_bg_setting',
+        'section'     => 'navaz_wp_login_page_section',
+    ) ) );
+    $wp_customize->add_setting( 'navaz_wp_login_field_color_setting', array(
+        'default' => '#ea1a70',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'navaz_wp_login_field_color_setting', array(
+        'label'       => 'WP Login field color',
+        'description' => __( 'Here is the description about WP Login Page field color', 'navaztheme' ),
+        'setting'     => 'navaz_wp_login_field_color_setting',
+        'section'     => 'navaz_wp_login_page_section',
     ) ) );
 
-    
+
+    /*
+
     // WP Default Login Page color Change -----
     $wp_customize->add_setting( 'navaz_wp_login_logo_setting', array(
         'default' => get_template_directory_uri() . '/img/wp_login_bd.jpg',
     ) );
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'navaz_wp_login_logo_setting', array(
-        'label'       => 'WP Login logo Upload',
+        'label'       => 'WP Login page bg change',
         'description' => __( 'Here is the description about WP Login Page logo', 'navaztheme' ),
         'setting'     => 'navaz_wp_login_logo_setting',
-        'section'     => 'navaz_wp_login_section',
+        'section'     => 'navaz_wp_login_page_section',
     ) ) );
 
 
@@ -131,20 +135,20 @@ function navaz_customize_register( $wp_customize ) {
         'default' => '#ea1a70',
     ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'navaz_wp_login_field_color_setting', array(
-        'label'       => 'WP Login color Upload',
-        'description' => __( 'Here is the description about WP Login Page color', 'navaztheme' ),
+        'label'       => 'WP Login field color',
+        'description' => __( 'Here is the description about WP Login Page field color', 'navaztheme' ),
         'setting'     => 'navaz_wp_login_field_color_setting',
-        'section'     => 'navaz_wp_login_section',
+        'section'     => 'navaz_wp_login_page_section',
     ) ) );
-*/
-    
+    */
+  
 
 }
 add_action( 'customize_register', 'navaz_customize_register' );
 
 
 
-// Theme Color Change from customization || 
+// Theme Color Change from customization ||  
 function navaz_theme_color_cus() {
     ?>
         <style>
@@ -158,18 +162,21 @@ function navaz_theme_color_cus() {
 }
 add_action( 'wp_head', 'navaz_theme_color_cus' );
 
+
+// WP Login Page css Change
 function navaz_theme_wp_login() {
     ?>
        <style>
+            /* Login page logo css */
             #login h1 a, .login h1 a{
             background-image: url(<?php print get_theme_mod( 'navaz_wp_login_logo_setting' );?>) !important;
             }
-            /* Login page bg change css  */
+            /* Login page bg css */
             body.login {
-                background: url(<?php print get_theme_mod( 'navaz_wp_login_bg_logo_setting' );?>) !important;
+                background: url(<?php print get_theme_mod( 'navaz_wp_login_page_bg_setting' );?>) !important;
                 /* background: url(../img/wp_login_bd.jpg); */
             }
-            /* color change  */
+            /* Login page color change  */
             #login form p.submit input {
                 background: <?php print get_theme_mod( 'navaz_wp_login_field_color_setting' );?> !important;
             }

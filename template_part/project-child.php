@@ -31,7 +31,7 @@
     endif;
 ?>
 <div id="page_nav">
-    <?php if ( 'netkib_pagenav' ) {netkib_pagenav();} else {?>
+    <?php if ( 'navaz_pagenav' ) {navaz_pagenav();} else {?>
         <?php next_posts_link();?>
         <?php previous_posts_link();?>
     <?php }?>

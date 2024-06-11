@@ -13,14 +13,32 @@
 </head>
 <body <?php body_class();?> >
 
-<header id="header_area" class="<?php print get_theme_mod( 'navaz_header_menu_position_setting' ); ?>">
 
+<div class="top_header_area">
+    <div class="container">
+        <div class="row"> 
+            <div class="col-md-4">
+                <p><i class="fa-sharp fa-solid fa-location-dot"></i> <?php print get_option("address-info"); ?></p>
+            </div>
+            <div class="col-md-4 text-center">
+                <p><i class="fa-solid fa-envelope"></i> <?php print get_option("email-info"); ?></p>
+            </div>
+            <div class="col-md-4 text-end">
+                <p><i class="fa-solid fa-phone"></i> <?php print get_option("phone-number"); ?></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header id="header_area" class="<?php print get_theme_mod( 'navaz_header_menu_position_setting' ); ?>">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 logo_img">
-                <!-- <a href="#"> <img src="<?php // echo get_template_directory_uri(); ?>/img/logo.png" alt="logo" > </a> -->
+            <div class="col-md-3">
+                <div class="logo_img">
+                    <!-- <a href="#"> <img src="<?php // echo get_template_directory_uri(); ?>/img/logo.png" alt="logo" > </a> -->
                 <!-- <a href="<?php // echo home_url(); ?>"> <img src="<?php // echo esc_attr( $navaz_header_logo ); ?>" alt="logo" > </a> -->
                 <a href="<?php print home_url(); ?>"><img src="<?php print get_theme_mod( 'navaz_header_logo' ); ?>" alt="logo" > </a>
+                </div>
             </div>
             <div class="col-md-9">
             <?php wp_nav_menu( array( 'theme_location' => 'main_menu', 'menu_id' => 'nav' ) );?>

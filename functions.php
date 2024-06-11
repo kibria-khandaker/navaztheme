@@ -23,3 +23,9 @@ include_once 'inc/custom_post.php';
 
 // Shortcode Register
 include_once 'inc/shortcode.php';
+
+// WP Default Login Page Edit
+include_once 'inc/login_enqueue.php';
+
+// Custom Theme Option
+include_once 'inc/theme_option/admin_theme_option.php';

@@ -29,10 +29,23 @@ a{
 a:hover{
   color: var(--pink);
 }
-.logo_img a img, img {
+
+.logo_img{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.logo_img a img{
+  width: auto;
+  height: 60px;
+}
+img {
   max-width: 100%;
   height: auto;
 }
+
 .post_read_more_btn,
 .error_home_btn,
 .but_shortcode {
