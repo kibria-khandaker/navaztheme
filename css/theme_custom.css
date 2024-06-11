@@ -3,16 +3,16 @@
 ================================================ */
 :root {
   --pink: #ea1a70;
-  --blackColor:#262626;
-  --whiteColor:#ffffff;
-  --dimWhiteColor:#f3f3f3;
+  --blackColor: #262626;
+  --whiteColor: #ffffff;
+  --dimWhiteColor: #f3f3f3;
 }
 body {
   /* background-color: var(--pink); */
   font-family: "Raleway", serif;
   font-size: 15px;
   line-height: 1.5em;
-  color:var(--blackColor);
+  color: var(--blackColor);
 }
 h1,
 h2,
@@ -23,21 +23,21 @@ h6 {
   font-family: "Raleway", sans-serif;
   /* line-height: 1.5em; */
 }
-a{
-  color:var(--blackColor);
+a {
+  color: var(--blackColor);
 }
-a:hover{
+a:hover {
   color: var(--pink);
 }
 
-.logo_img{
+.logo_img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 100%;
   width: 100%;
 }
-.logo_img a img{
+.logo_img a img {
   width: auto;
   height: 60px;
 }
@@ -55,6 +55,7 @@ img {
   font-weight: 500;
   text-decoration: none;
   padding: 7px 15px;
+  display: inline-block;
   transition: 0.3s;
 }
 .but_shortcode {
@@ -66,7 +67,7 @@ img {
 .post_read_more_btn:hover,
 .error_home_btn:hover,
 .but_shortcode:hover {
-  background-color:var(--blackColor);
+  background-color: var(--blackColor);
   color: var(--whiteColor);
 }
 
@@ -74,7 +75,7 @@ img {
 Header Css
 ================================================ */
 #header_area {
-  padding:5px 0px;
+  padding: 5px 0px;
   box-shadow: 0 3px 10px var(--dimWhiteColor);
 }
 
@@ -93,7 +94,7 @@ Header Css
   display: block;
 } */
 #header_area .col-md-9 ul li a {
-  color:var(--blackColor);
+  color: var(--blackColor);
   padding: 20px 10px;
   display: block;
   text-transform: uppercase;
@@ -103,27 +104,27 @@ Header Css
   background: var(--pink);
   color: var(--whiteColor);
 }
-.slicknav_menu{
+.slicknav_menu {
   display: none;
 }
 
 /* ================================================
 Top header area styling
 ================================================ */
-.top_header_area{
+.top_header_area {
   background-color: var(--pink);
-  padding:10px 0;
-}
-.top_header_area p{
-  margin: 0;
-  color: var(--whiteColor);
+  padding: 10px 0;
+  }
+  .top_header_area p {
+    margin: 0;
+    color: var(--whiteColor);  
 }
 
 /* ================================================
 Dropdown Menu
 ================================================ */
 #header_area .col-md-9 ul li ul {
-  background:var(--blackColor) none repeat scroll 0 0;
+  background: var(--blackColor) none repeat scroll 0 0;
   left: -99999px;
   margin: 0;
   position: absolute;
@@ -143,7 +144,7 @@ Dropdown Menu
   padding: 8px 10px;
 }
 #header_area .col-md-9 ul li ul li a:hover {
-  color:var(--blackColor);
+  color: var(--blackColor);
 }
 #header_area .col-md-9 ul li:hover a {
   background: var(--pink);
@@ -173,7 +174,7 @@ Sub Dropdown Menu
   color: var(--whiteColor);
 }
 #header_area .col-md-9 ul ul li:hover ul li a {
-  background:var(--blackColor);
+  background: var(--blackColor);
   color: var(--whiteColor);
 }
 #header_area .col-md-9 ul ul li ul li a:hover {
@@ -263,14 +264,14 @@ Index page css
 #body_area .post_details h2 a:hover {
   /* color: #291c7c; */
 }
-#body_area .post_date{
-  margin-left:5px;
+#body_area .post_date {
+  margin-left: 5px;
   margin-top: -10px;
   font-size: 12px;
-  }
-#body_area .post_date span{
-display: inline-block;
-margin: 0px 5px;
+}
+#body_area .post_date span {
+  display: inline-block;
+  margin: 0px 5px;
 }
 /* ================================================
 blog pagination or navigation css
@@ -278,7 +279,7 @@ blog pagination or navigation css
 #page_nav {
   margin: 100px 0px;
 }
-.wp_pagenav{
+.wp_pagenav {
   text-align: right;
   font-weight: 500;
 }
@@ -302,7 +303,7 @@ blog pagination or navigation css
 }
 #page_nav .page-numbers.current,
 #page_nav .page-numbers:hover {
-  background:var(--blackColor);
+  background: var(--blackColor);
 }
 
 /* ================================================
@@ -337,7 +338,7 @@ widget_sidebar_title */
   transition: 0.5s;
 }
 .widget_sidebar_box button[type="submit"]:hover {
-  background:var(--blackColor);
+  background: var(--blackColor);
   border: 1px solid var(--blackColor);
 }
 .widget_sidebar_box ul {
@@ -355,7 +356,7 @@ widget_sidebar_title */
 }
 .widget_sidebar_box ul li a {
   display: inline-block;
-  color:var(--blackColor);
+  color: var(--blackColor);
   text-decoration: none;
 }
 .widget_sidebar_box ul li a:hover {
@@ -363,7 +364,7 @@ widget_sidebar_title */
 }
 .widget_sidebar_box a.tag-cloud-link {
   color: var(--whiteColor);
-  background:var(--blackColor);
+  background: var(--blackColor);
   display: inline-block;
   font-size: 12px !important;
   text-decoration: none;
@@ -375,16 +376,14 @@ widget_sidebar_title */
   background: var(--pink);
 }
 
-
 #home_widget_area {
-
 }
-.widget_homepage_box ul { 
+.widget_homepage_box ul {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 15px;
 }
-.widget_homepage_box ul li{ 
+.widget_homepage_box ul li {
   border: 1px solid var(--dimWhiteColor);
   padding: 10px;
   border-radius: 5px;
@@ -392,12 +391,13 @@ widget_sidebar_title */
 }
 
 /* only for calendar date making  */
-.widget_sidebar_box .wp-block-calendar td#today{
+.widget_sidebar_box .wp-block-calendar td#today {
   color: var(--pink);
   font-weight: 700;
   border: 2px solid var(--pink);
 }
-.wp-block-calendar td, .wp-block-calendar th {
+.wp-block-calendar td,
+.wp-block-calendar th {
   text-align: center;
 }
 
@@ -439,7 +439,7 @@ comments area
   transition: 0.3s;
 }
 #comments_area input[type="submit"].submit:hover {
-  background-color:var(--blackColor);
+  background-color: var(--blackColor);
 }
 
 #comments_area textarea {
@@ -478,9 +478,11 @@ footer widget area
 /* widget_footer_box
 widget_footer_title */
 #footer {
-  background-color:var(--blackColor);
+  background-color: var(--blackColor);
   padding: 25px;
-  color: var(--whiteColor); /* it's of  .widget_footer_box .wp-block-heading{ margin-left: -15px;} */
+  color: var(
+    --whiteColor
+  ); /* it's of  .widget_footer_box .wp-block-heading{ margin-left: -15px;} */
 }
 /* .widget_footer_box {
   margin-bottom: 20px;
@@ -510,7 +512,7 @@ widget_footer_title */
   transition: 0.5s;
 }
 .widget_footer_box button[type="submit"]:hover {
-  background:var(--blackColor);
+  background: var(--blackColor);
   border: 1px solid var(--blackColor);
 }
 .widget_footer_box ul {
@@ -536,7 +538,7 @@ widget_footer_title */
 }
 .widget_footer_box a.tag-cloud-link {
   color: var(--whiteColor);
-  background:var(--blackColor);
+  background: var(--blackColor);
   display: inline-block;
   font-size: 12px !important;
   text-decoration: none;
@@ -559,7 +561,7 @@ widget_footer_title */
 .error_page h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color:var(--blackColor);
+  color: var(--blackColor);
   margin-bottom: 30px;
   text-transform: uppercase;
 }
@@ -599,29 +601,36 @@ widget_footer_title */
   transition: 0.5s;
 }
 .error_search input[type="submit"]:hover {
-  background:var(--blackColor);
+  background: var(--blackColor);
   /* border: 1px solid var(--blackColor); */
-  border-color:var(--blackColor);
+  border-color: var(--blackColor);
 }
 
 /* ================================================
 footer copyright area
 ================================================ */
 #copyright_area {
-  background-color:var(--pink);
+  background-color: var(--pink);
   padding: 10px 0;
   color: var(--whiteColor);
 }
-#copyright_area p {
-  text-align: center;
+.copyright_area_items {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright_area_items p {
+  /* text-align: center; */
   margin: 0;
   padding: 0;
   color: var(--whiteColor);
 }
-#copyright_area p a {
+.copyright_area_items p a {
   color: var(--dimWhiteColor);
 }
-#copyright_area p a:hover {
+.copyright_area_items p a:hover {
   color: var(--whiteColor);
   text-decoration: underline;
 }
@@ -632,7 +641,7 @@ Theme Service area styling
 #service_area {
   padding: 45px 0;
 }
-#service_area .child_service { 
+#service_area .child_service {
   box-shadow: 0 0 9px 0px var(--dimWhiteColor);
   padding: 15px;
   border-radius: 5px;
@@ -646,20 +655,17 @@ Theme Service area styling
   margin: 0 0 15px;
 }
 
-
-
-
 /* ================================================
 Slider Css
 ================================================ */
-#slider_area{
+/* #slider_area {
   margin-top: 15px;
   width: 100%;
   height: 300px;
 }
-#slider_area img{
+#slider_area img {
   width: 100%;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
   object-position: center;
 }
@@ -669,4 +675,27 @@ Slider Css
 }
 
 .slider {
+} */
+
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.owl_slider_text {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000003b;
+  color: #fff;
 }

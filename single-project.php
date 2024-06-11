@@ -1,4 +1,3 @@
-<span class="text-center d-block">single-project.php</span>
 <?php 
 /**
  * The template display single-project page

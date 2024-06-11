@@ -1,4 +1,3 @@
-<span class="text-center d-block">archive-project.php</span>
 <?php 
 /**
  * The template for archive-project page

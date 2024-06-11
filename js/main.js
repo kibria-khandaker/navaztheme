@@ -18,11 +18,11 @@ jQuery(document).ready(function () {
 
     // owl-carousel 2-------------
     jQuery('.owl-carousel').owlCarousel({
-        stagePadding: 50,
+        stagePadding: 0,
         loop:true,
         margin:5,
         nav:true,
-        autoplay:true,
+        autoplay:false,
         autoplayTimeout:1500,
         autoplayHoverPause:true,
         responsive:{
@@ -33,7 +33,7 @@ jQuery(document).ready(function () {
                 items:2
             },
             1000:{
-                items:3
+                items:1
             }
         }
     })

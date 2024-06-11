@@ -1,4 +1,3 @@
-<span class="text-center d-block">page_full_width.php</span>
 <?php 
 /**
  * Template Name: Full Width Page

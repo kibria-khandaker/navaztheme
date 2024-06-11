@@ -48,9 +48,14 @@ display: block;
     max-width: 150PX;
     height: auto;
 }
+.logo_img {
+    justify-content: center;
+    padding: 15px 0px;
+}
 .slicknav_btn{
     right: 20px; 
     top: 40px;
+    border: 1px solid #ffffff;
 }
 .slicknav_nav{
     border-radius: 0px 10px 10px;

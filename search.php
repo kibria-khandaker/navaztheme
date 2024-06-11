@@ -1,4 +1,3 @@
-<span class="text-center d-block">search.php</span>
 <?php
 /**
  * The template for search page

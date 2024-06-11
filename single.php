@@ -1,4 +1,3 @@
-<span class="text-center d-block">single.php</span>
 <?php 
 /**
  * The template display single blog

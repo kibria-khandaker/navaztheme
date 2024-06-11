@@ -27,9 +27,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <!-- <p><?php // echo esc_html( $navaz_copyright_setting ); ?></p> -->
-                    <p><?php print get_theme_mod('navaz_copyright_setting'); ?></p>
-                    
+                    <div class="copyright_area_items">
+                        <!-- <p><?php // echo esc_html( $navaz_copyright_setting ); ?></p> -->
+                        <p>
+                            <?php print get_theme_mod('navaz_copyright_setting'); ?>                        
+                        </p>
+                        <p> +||+ </p>
+                        <p> <small> Template Name : <?php echo get_current_template(); ?></small></p>
+                    </div>
                 </div>
             </div>
         </div>

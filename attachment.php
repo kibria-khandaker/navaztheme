@@ -1,4 +1,3 @@
-<span class="text-center d-block">attachment.php</span>
 <?php
 /**
  * The template display attachment blog

@@ -60,4 +60,46 @@ function navaz_pagenav() {
 
 
 
+// a Function to Display the Template Name || front-end view for everyone
+
+function get_current_template() {
+    global $template;
+    return basename($template);
+}
+
+
+
+
+
+
+// a Function to Display the Template Name || result show in  "View Page Source" like <!-- Template: page.php --> ===========
+
+// function show_template() {    // show it to everyone (not recommended for  logged-in super admins)
+//     global $template;    
+//     echo '<!-- Template: ' . basename($template) . ' -->';
+// }
+// add_action('wp_head', 'show_template');
+
+
+// function show_template() {
+//     if (is_super_admin()) { // Only show to logged-in super admins
+//         global $template;
+//         echo '<!-- Template: ' . basename($template) . ' -->';
+//     }
+// }
+// add_action('wp_head', 'show_template');
+
+
+// function show_template() {
+//     if (is_user_logged_in()) { // Show to all logged-in users
+//         global $template;
+//         echo '<!-- Template: ' . basename($template) . ' -->';
+//     }
+// }
+// add_action('wp_head', 'show_template');
+
+
+
+
+
 

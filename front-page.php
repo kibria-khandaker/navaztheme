@@ -1,4 +1,3 @@
-<span class="text-center d-block">front-page.php</span>
 <?php
 /**
  * Theme Front Page

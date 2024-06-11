@@ -1,4 +1,3 @@
-<span class="text-center d-block">image.php</span>
 <?php
 /**
  * The template display image blog

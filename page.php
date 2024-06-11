@@ -1,4 +1,3 @@
-<span class="text-center d-block">page.php</span>
 <?php 
 /**
  * The template display page

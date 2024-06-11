@@ -1,4 +1,3 @@
-<span class="text-center d-block">index.php</span>
 <?php 
 /**
  * The template 404 page
