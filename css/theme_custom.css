@@ -8,7 +8,7 @@
   --dimWhiteColor: #f3f3f3;
 }
 body {
-  /* background-color: var(--pink); */
+  /* background: var(--pink); */
   font-family: "Raleway", serif;
   font-size: 15px;
   line-height: 1.5em;
@@ -23,6 +23,10 @@ h6 {
   font-family: "Raleway", sans-serif;
   /* line-height: 1.5em; */
 }
+.multiBoxTitle a{
+  font-size: 18px;
+  font-weight: 500;
+}
 a {
   color: var(--blackColor);
 }
@@ -32,7 +36,7 @@ a:hover {
 
 .logo_img {
   display: flex;
-  justify-content: flex-start;
+
   align-items: center;
   height: 100%;
   width: 100%;
@@ -41,15 +45,23 @@ a:hover {
   width: auto;
   height: 60px;
 }
+.left_menu .logo_img{
+  justify-content: flex-end;
+}
+.center_menu .logo_img{
+  justify-content:center;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
+
 .post_read_more_btn,
 .error_home_btn,
 .but_shortcode {
-  background-color: var(--pink);
+  background: var(--pink);
   color: var(--whiteColor);
   font-size: 15px;
   font-weight: 500;
@@ -58,6 +70,13 @@ img {
   display: inline-block;
   transition: 0.3s;
 }
+.post_read_more_btn,
+.error_home_btn,
+.but_shortcode{
+  text-shadow: 5px 5px 10px #00000099;
+}
+
+
 .but_shortcode {
   padding: 4px 10px;
   font-size: 12px;
@@ -67,7 +86,7 @@ img {
 .post_read_more_btn:hover,
 .error_home_btn:hover,
 .but_shortcode:hover {
-  background-color: var(--blackColor);
+  background: var(--blackColor);
   color: var(--whiteColor);
 }
 
@@ -112,7 +131,7 @@ Header Css
 Top header area styling
 ================================================ */
 .top_header_area {
-  background-color: var(--pink);
+  background: var(--pink);
   padding: 10px 0;
   }
   .top_header_area p {
@@ -249,9 +268,9 @@ Index page css
 #body_area .post_details {
   width: 100%;
 }
-#body_area .post_details div {
+/* #body_area .post_details div {
   width: 100% !important;
-}
+} */
 #body_area .post_details h2 {
   font-weight: 700;
   font-size: 30px;
@@ -429,7 +448,7 @@ comments area
   padding: 15px;
 }
 #comments_area input[type="submit"].submit {
-  background-color: var(--pink);
+  background: var(--pink);
   border: 0px;
   color: var(--whiteColor);
   font-size: 15px;
@@ -439,7 +458,7 @@ comments area
   transition: 0.3s;
 }
 #comments_area input[type="submit"].submit:hover {
-  background-color: var(--blackColor);
+  background: var(--blackColor);
 }
 
 #comments_area textarea {
@@ -450,7 +469,7 @@ comments area
 archive page css
 ================================================ */
 #archive_head {
-  background-color: var(--pink);
+  background: var(--pink);
   padding: 10px;
   margin-bottom: 20px;
   color: var(--whiteColor);
@@ -464,7 +483,7 @@ archive page css
 search page css
 ================================================ */
 #search_head {
-  background-color: var(--pink);
+  background: var(--pink);
   padding: 10px;
   margin-bottom: 20px;
   color: var(--whiteColor);
@@ -478,7 +497,7 @@ footer widget area
 /* widget_footer_box
 widget_footer_title */
 #footer {
-  background-color: var(--blackColor);
+  background: var(--blackColor);
   padding: 25px;
   color: var(
     --whiteColor
@@ -610,7 +629,7 @@ widget_footer_title */
 footer copyright area
 ================================================ */
 #copyright_area {
-  background-color: var(--pink);
+  background: var(--pink);
   padding: 10px 0;
   color: var(--whiteColor);
 }
@@ -639,25 +658,30 @@ footer copyright area
 Theme Service area styling
 ================================================ */
 #service_area {
-  padding: 45px 0;
 }
-#service_area .child_service {
+#service_area .child_item_box {
   box-shadow: 0 0 9px 0px var(--dimWhiteColor);
   padding: 15px;
   border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
-#service_area .child_service h2 {
+#service_area .child_item_box h2 {
   font-size: 18px;
-  text-align: center;
 }
-#service_area .child_service img {
+#service_area .child_item_box img {
   width: 100%;
   margin: 0 0 15px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
-
+#service_area .child_item_box img:hover {
+  transform: scale(1.03);
+}
 /* ================================================
 Slider Css
 ================================================ */
+
 /* #slider_area {
   margin-top: 15px;
   width: 100%;
@@ -696,6 +720,168 @@ Slider Css
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0000003b;
+  background: #00000059;
   color: #fff;
 }
+
+.owl_slider_text h2{
+  text-shadow: 0px 0px 15px black;
+}
+.owl_slider_text p{
+  width: 50%;
+  text-align: center;
+  text-shadow: 5px 5px 10px #00000099;
+}
+
+
+/* ================================================
+Contact Form 7 CSS Styling Css 
+================================================ */
+.contact_Form_7 {
+  font-family: verdana, sans-serif;
+	color: white;
+	background-image:
+  linear-gradient(to right top, #05193799, #004d7a99, #00879399, #00bf7299, #a8eb1299),
+  url(https://picsum.photos/seed/picsum/1200/800);
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0 auto;
+}
+h1 {
+	background: rgba(0,0,0,.3);
+	padding: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+	box-shadow: 0 0 1em rgba(0,0,0,.3);
+}
+
+/* CF 7 override */
+form.wpcf7-form{
+	background: rgba(0,0,0,.1);
+	padding: 1em;
+	box-shadow: 0 0 1em rgba(0,0,0,.3);
+  backdrop-filter: blur(5px);
+}
+form.wpcf7-form * {
+	transition: 225ms;
+}
+form.wpcf7-form label {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+form.wpcf7-form input,
+form.wpcf7-form select,
+form.wpcf7-form textarea {
+	display: block;
+	width: 100%;
+	padding: .5em 0;
+	margin-bottom: 1.5em;
+	border: 0;
+	border-bottom: 1px solid rgba(255,255,255,.7);
+	background: transparent;
+	font-size: 1.2em;
+}
+form.wpcf7-form input:hover,
+form.wpcf7-form select:hover,
+form.wpcf7-form textarea:hover {
+	cursor: pointer;
+	border-bottom: 1px solid rgba(255,255,255,1);
+}
+form.wpcf7-form input:focus,
+form.wpcf7-form select:focus,
+form.wpcf7-form textarea:focus {
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 -2px 0 #333;
+	outline: none;
+}
+
+
+form.wpcf7-form input,
+form.wpcf7-form textarea{
+	background: rgba(0,0,0,.03));
+}
+
+form.wpcf7-form input[type="submit"] {
+	padding: 1em;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-size: 110%;
+	border: 2px solid #fff;
+	box-shadow: none;
+	background: rgba(0,0,0,.1);
+	color: #fff;
+	line-height: 1.2em;
+  /* width: calc(100% - 3em); */
+  display: inline-block;
+  margin-right: 1em;
+}
+form.wpcf7-form input[type="submit"]:hover {
+	/* background-color: rgba(255,255,255,.2); */
+	background-color:var(--pink);
+	font-weight: 900;
+}
+
+
+span.wpcf7-not-valid-tip {
+	position: relative;
+	top: -1em;
+	color: #e87676;
+}
+div.wpcf7-response-output {
+	padding: 1em !important;
+	margin: 0 !important;
+}
+
+div.wpcf7 .ajax-loader {
+	display:none;
+   background: none;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  animation: spin 1s cubic-bezier(0.36, 0.09, 0.27, 0.97) infinite;
+  border: 3px solid #dedede;
+  border-top: 3px solid #000000;
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  margin: 0;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes spin {
+  50% {
+    border-top-color: #a7005d;
+  }
+  100% {
+    border-top-color: #000000;
+   -webkit-transform: rotate(360deg);
+           transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  50% {
+    border-top-color: #a7005d;
+  }
+  100% {
+    border-top-color: #000000;
+   -webkit-transform: rotate(360deg);
+           transform: rotate(360deg);
+  }
+}
+
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha {
+    opacity: .75;
+}
+
+
+
+/* ================================================
+About Page Styling Css 
+================================================ */
+.about_page{
+
+
+
+}
+
+

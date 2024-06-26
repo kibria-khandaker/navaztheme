@@ -4,7 +4,7 @@ WP Default Login Page
 body.login {
     background: url(../img/wp_login_bd.jpg);
     background-position: center center;
-    background-color: rgb(114, 114, 114);
+    background: rgb(114, 114, 114);
     display: flex;
     align-items: center;
     background-repeat: no-repeat !important;
@@ -12,7 +12,7 @@ body.login {
   }
 
   body.login #login {
-    background-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 40px;
     border-radius: 25px;
   }

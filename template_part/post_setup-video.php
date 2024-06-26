@@ -7,8 +7,13 @@ if ( have_posts() ):
                 <span class="dashicons dashicons-format-<?php echo get_post_format( $post->ID ) ?>"></span>
                 <p> Video Format Post Setup </p>
                 <div class="post_thumb">
+                    <!-- post-thumbnails -->
                     <a href="<?php the_permalink();?>">
-                        <?php echo the_post_thumbnail( 'post-thumbnails' ); ?>
+                        <?php if ( has_post_thumbnail() ) {?>
+                            <?php echo get_the_post_thumbnail( get_the_ID(), 'post-thumbnail' ); ?>
+                        <?php } else {?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/demo_img_1.jpg" alt="logo">
+                        <?php }?>
                     </a>
                 </div>
                 <div class="post_details">

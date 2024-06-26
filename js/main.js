@@ -40,6 +40,18 @@ jQuery(document).ready(function () {
 
 
 
+    /* my Contact Form 7 || simulate form submit */
+    jQuery("form").on("submit", function (e) {
+        e.preventDefault();
+        jQuery(".ajax-loader").css({ display: "inline-block" });
+        setTimeout(() => {
+            jQuery(".ajax-loader").css({ display: "none" });
+        }, 2000);
+    });
+
+
+
+
 });
 
 

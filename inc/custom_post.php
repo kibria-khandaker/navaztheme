@@ -56,7 +56,7 @@ function navaz_custom_slider() {
             'menu_position'       => 5,
             'capability_type'     => 'post',
             'rewrite'             => array( 'slug' => 'slider' ),
-            'supports'            => array( 'title', 'thumbnail', 'editor','excerpt' ),
+            'supports'            => array( 'title', 'thumbnail', 'editor' ),
         )
     );
 }

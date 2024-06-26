@@ -6,6 +6,7 @@ add_theme_support( 'title-tag' );
 // Thumbnail Image area
 add_theme_support( 'post-thumbnails', array( 'page', 'post', 'service','slider' ) );
 add_image_size( 'post-thumbnails', 970, 350, true );
+add_image_size( 'slider', 1296, 400, true );
 
 function navaz_theme_setup() {
     add_theme_support( 'post-thumbnails' );
@@ -22,7 +23,7 @@ add_filter( 'excerpt_more', 'navaz_read_more' );
 
 // Limit excerpt length to 40 words
 function navaz_excerpt_length( $length ) {
-    return 10;
+    return 20;
 }
 add_filter( 'excerpt_length', 'navaz_excerpt_length', 999 );
 

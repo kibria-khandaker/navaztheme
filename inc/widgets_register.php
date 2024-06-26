@@ -2,7 +2,7 @@
 // sidebar Register Function
 function navaz_widgets_register(){
 	register_sidebar( array(
-		'name'          => __( 'Main Widgets', 'navaztheme' ),
+		'name'          => __( 'Main Sidebar Widgets', 'navaztheme' ),
 		'id'            => 'sidebar-1',
 		'description'   => __( 'This widgets area will be shown page side', 'navaztheme' ),
 		'before_widget'	=> '<div class="widget_sidebar_box">',
@@ -42,12 +42,12 @@ function navaz_widgets_register(){
     ) );
 
 	register_sidebar( array(
-		'name'          => __( 'Home page Widgets', 'navaztheme' ),
-		'id'            => 'home-1',
-		'description'   => __( 'This widgets area will be shown page Home page', 'navaztheme' ),
-		'before_widget'	=> '<div class="widget_homepage_box">',
+		'name'          => __( 'Inside Page Widgets', 'navaztheme' ),
+		'id'            => 'inside_page_1',
+		'description'   => __( 'This widgets area will be shown inside page', 'navaztheme' ),
+		'before_widget'	=> '<div class="widget_inside_page_box">',
 		'after_widget'	=> '</div>',
-		'before_title'	=> '<h6 class="widget_homepage_title">',
+		'before_title'	=> '<h6 class="widget_inside_page_title">',
 		'after_title'	=> '</h6>',
     ) );
 

@@ -1,31 +1,23 @@
 <section id="service_area">
     <div class="container">
         <div class="row">
-
-        <?php
-            query_posts( 'post_type=project&post_status=publish&posts_per_page=3&order=ASC&paged=' . get_query_var( 'post' ) );
-            if ( have_posts() ):
-                while ( have_posts() ): the_post();
-        ?>
-        <div class="col-md-4">
-            <div class="child_service">
-                <h2> <?php the_title(); ?> </h2>
-                <?php echo the_post_thumbnail('project'); ?>
-                <?php the_excerpt(); ?>
-                
-            </div>
-        </div>
-        <?php
-                endwhile;
-            else:
-                _e( 'No project found','navaztheme' );
-            endif;
-        ?>
-
+            <div class="col-md-12 text-center mt-5">
+                <h3 class="text-uppercase"> Our Some Projects </h3>
+                <p class="w-50 mx-auto ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam accusamus explicabo eum aliquam odio repellat?</p>
+            </div>                
+                <!-- Dynamic Project  start -->
+                <?php 
+                    if ( shortcode_exists( 'project_shortcode' ) ) {
+                        echo do_shortcode('[project_shortcode]');
+                    } else {
+                        echo '<p>The shortcode "project_shortcode" does not exist.</p>';
+                    }
+                ?>
+                <!-- Dynamic Project  end -->
         </div>
         <div class="row">
-            <div class="col-md-12 text-center">
-                <a href="<?php print home_url() ?>/project"> All Project </a>
+            <div class="col-md-12 text-center mt-3 mb-5">
+                <a class="post_read_more_btn  px-5" href="<?php print home_url() ?>/project"> All Projects </a>
             </div>
         </div>
     </div>

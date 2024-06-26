@@ -5,7 +5,7 @@
  * */ 
 ?>
 
-<footer id="footer_area">
+<footer id="footer_area" class="">
 
     <section id="footer">
         <div class="container">
