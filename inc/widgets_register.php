@@ -44,7 +44,7 @@ function navaz_widgets_register(){
 	register_sidebar( array(
 		'name'          => __( 'Inside Page Widgets', 'navaztheme' ),
 		'id'            => 'inside_page_1',
-		'description'   => __( 'This widgets area will be shown inside page', 'navaztheme' ),
+		'description'   => __( 'This widgets area will be shown inside in to any page with short code', 'navaztheme' ),
 		'before_widget'	=> '<div class="widget_inside_page_box">',
 		'after_widget'	=> '</div>',
 		'before_title'	=> '<h6 class="widget_inside_page_title">',

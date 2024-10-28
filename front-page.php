@@ -26,7 +26,7 @@ get_header();?>
             </div>
             <div class="col-md-12"> 
 
-                <!-- Dynamic Service  start -->
+                <!-- Dynamic inside_page_shortcode  start -->
                 <?php 
                         if ( shortcode_exists( 'inside_page_shortcode' ) ) {
                             echo do_shortcode('[inside_page_shortcode]');
@@ -34,7 +34,7 @@ get_header();?>
                             echo '<p>The shortcode "inside_page_shortcode" does not exist.</p>';
                         }
                     ?>
-                <!-- Dynamic Service  end -->
+                <!-- Dynamic inside_page_shortcode  end -->
             </div>
         </div>
     </div>

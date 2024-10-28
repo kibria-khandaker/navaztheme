@@ -1,11 +1,12 @@
 <?php
+/* Here all Theme Customize Function */
 
 // Theme Function
 function navaz_customize_register( $wp_customize ) {
 
     // Header Area Customize Function
     $wp_customize->add_section( 'navaz_header_area', array(
-        'title'       => __( 'Header Area', 'navaztheme' ),
+        'title'       => __( 'Navaz Header Area ', 'navaztheme' ),
         'description' => __( 'Here is the description about Header Area', 'navaztheme' ),
     ) );
     $wp_customize->add_setting( 'navaz_header_logo', array(
@@ -21,7 +22,7 @@ function navaz_customize_register( $wp_customize ) {
 
     // Menu Position Function
     $wp_customize->add_section( 'navaz_menu_position_section', array(
-        'title'       => __( 'Menu Position', 'navaztheme' ),
+        'title'       => __( 'Navaz Menu Position', 'navaztheme' ),
         'description' => __( 'Here is the description about Menu Position Area', 'navaztheme' ),
     ) );
     $wp_customize->add_setting( 'navaz_header_menu_position_setting', array(
@@ -42,7 +43,7 @@ function navaz_customize_register( $wp_customize ) {
 
     // Footer Option
     $wp_customize->add_section( 'navaz_footer_section', array(
-        'title'       => __( 'Footer Option', 'navaztheme' ),
+        'title'       => __( 'Navaz Footer Option', 'navaztheme' ),
         'description' => __( 'Here is the description about Footer Area', 'navaztheme' ),
     ) );
     $wp_customize->add_setting( 'navaz_copyright_setting', array(
@@ -57,7 +58,7 @@ function navaz_customize_register( $wp_customize ) {
 
     // Theme Color Change from customization
     $wp_customize->add_section( 'navaz_theme_color_section', array(
-        'title'       => __( 'Theme Color Change Option', 'navaztheme' ),
+        'title'       => __( 'Navaz Theme Color', 'navaztheme' ),
         'description' => __( 'Here is the description about Theme Color Change', 'navaztheme' ),
     ) );
 
@@ -84,7 +85,7 @@ function navaz_customize_register( $wp_customize ) {
 
     // WP Default Login Page logo Change ------------
     $wp_customize->add_section( 'navaz_wp_login_page_section', array(
-        'title'       => __( 'WP Login page setup', 'navaztheme' ),
+        'title'       => __( 'Navaz WP Login page', 'navaztheme' ),
         'description' => __( 'Here is the description about Theme WP Login Logo Change', 'navaztheme' ),
     ) );
 
